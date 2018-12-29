@@ -644,7 +644,7 @@ const prefix = "%";
   let reason = message.content.split(" ").slice(2).join(" ");
 
   if (message.mentions.users.size < 1) return message.reply("منشن شخص");
-  if(!reason) return message.reply ("اكتب سبب الطرد");
+  if(!reason) return message.reply ("احترم نفسك حبي");
   if (!message.guild.member(user)
   .bannable) return message.reply("لايمكنني طرد شخص اعلى من رتبتي");
 
@@ -831,8 +831,8 @@ if (message.content === '%help') {
 client.on("message", msg => {
   if(msg.content === '%' + "id") {
       const embed = new Discord.RichEmbed();
-  embed.addField(":trident:|اسم الحساب :", `${msg.author.username}#${msg.author.discriminator}`, true)
-          .addField(":id:| الاي دي :", `${msg.author.id}`, true)
+  embed.addField(":trident:|الأمن المركز :", `${msg.author.username}#${msg.author.discriminator}`, true)
+          .addField(":id:| 526972707401760778 :", `${msg.author.id}`, true)
           .setColor("RANDOM")
           .setFooter(msg.author.username , msg.author.avatarURL)
           .setThumbnail(`${msg.author.avatarURL}`)
@@ -854,11 +854,11 @@ if (message.content === '%help') {
 .setThumbnail(message.author.avatarURL)    
       .addField("**:radioactive: أوامر الأداره**","** **")
       .addField("**%bc  :mega:**","**لـ البرودكاست**")
-      .addField("**%clear :octagonal_sign:**","**لـ مسح الشات**")
+      .addField("**%مسح :octagonal_sign:**","**لـ مسح الشات**")
       .addField("**%kick  :outbox_tray:**","**لـ طرد عضو**")
       .addField("**%ban  :outbox_tray:**","**لـ حظر عضو**")
         .addField("**%say**","**لتكلم بصفه البوت**")
-        .addField("**%cv**","**عمل روم صوتي**")
+        .addField("**%ro**","**عمل روم صوتي**")
         .addField("**%cct**","**عمل روم صوتي**")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
@@ -868,7 +868,7 @@ client.on('message' , message => {
 if (message.content === '%owner') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
-      .addField("**تم تطوير وبرمجه البوت من قبل :wrench: **","** Oh , 'Mr.Kayan.♕ ، ✩#0001**")
+      .addField("**تم تطوير وبرمجه البوت من قبل :wrench: **","** Oh , 'IRAQMAXYT#7424")
 .setColor('#B101FC')
   message.author.sendEmbed(embed);
     }
@@ -1136,11 +1136,11 @@ client.on("message", message => {
 		var role = msg.split(' ').slice(2).join(" ").toLowerCase(); 
 		var role1 = message.guild.roles.filter( r=>r.name.toLowerCase().indexOf(role)>-1 ).first(); 
 		if( !role1 ) return message.reply( '**:x: يرجى وضع الرتبة المراد سحبها من الشخص**' );if( message.mentions.members.first() ){
-			message.mentions.members.first().removeRole( role1 );
+			message.mentions.members.first().removeRole( role );
 			return message.reply('**:white_check_mark: [ '+role1.name+' ] رتبة [ '+args[0]+' ] تم سحب من **');
 		}
 		if( args[0].toLowerCase() == "all" ){
-			message.guild.members.forEach(m=>m.removeRole( role1 ))
+			message.guild.members.forEach(m=>m.removeRole( role ))
 			return	message.reply('**:white_check_mark: [ '+role1.name+' ] تم سحب من الكل رتبة**');
 		} else if( args[0].toLowerCase() == "bots" ){
 			message.guild.members.filter(m=>m.user.bot).forEach(m=>m.removeRole(role1))
@@ -1159,7 +1159,7 @@ client.on("message", message => {
 			return message.reply('**:white_check_mark: [ '+role1.name+' ] رتبة [ '+args[0]+' ] تم اعطاء **');
 		}
 		if( args[0].toLowerCase() == "all" ){
-			message.guild.members.forEach(m=>m.addRole( role1 ))
+			message.guild.members.forEach(m=>m.addRole( role ))
 			return	message.reply('**:white_check_mark: [ '+role1.name+' ] تم اعطاء الكل رتبة**');
 		} else if( args[0].toLowerCase() == "bots" ){
 			message.guild.members.filter(m=>m.user.bot).forEach(m=>m.addRole(role1))
@@ -1174,7 +1174,7 @@ client.on("message", message => {
 
 
 client.on("message", (message) => {
-    if (message.content.startsWith("%cv")) {
+    if (message.content.startsWith("%ro")) {
                 if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
             let args = message.content.split(" ").slice(1);
         message.guild.createChannel(args.join(' '), 'voice');
