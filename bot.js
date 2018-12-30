@@ -679,7 +679,7 @@ const codes = {
     '*': '*⃣'
   };
   
-  'abcdefghijklmnopqrstuvwxyz'.split('ing').forEach(c => {
+  'abcdefghijklmnopqrstuvwxyz'.split('embed').forEach(c => {
     codes[c] = codes[c.toUpperCase()] = ` :regional_indicator_${c}:`;
   });
   
