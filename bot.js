@@ -422,7 +422,7 @@ client.on('message', message => {
   .setFooter(`© MrKayan.`, 'https://f.top4top.net/p_9515rj9d1.png')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3: تم الارسال الاوامر الي خاص")
-  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**IRAQMAXYT#7424")
+  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**IRAQMAXYT#7424**")
   
   message.channel.sendEmbed(embed);
   }
@@ -512,7 +512,7 @@ message.channel.send({embed:embed});
 
 
 client.on('message', message => {
-    if (message.content.startsWith('%clearr')) {
+    if (message.content.startsWith('%clear')) {
       if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`ماعندك هذا البرمشن[*MANAGE_MESSAGES*] `).catch(console.error);
   message.delete()
   if(!message.channel.guild) return;
