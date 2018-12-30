@@ -369,7 +369,7 @@ client.on('message', function(message) {
             }
     message.channel.send(Math.floor(Math.random() * args.join(' ')));
             if (!args[0]) {
-          message.edit('1')
+          message.edit('')
           return;
         }
     }
