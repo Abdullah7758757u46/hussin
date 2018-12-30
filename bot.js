@@ -422,7 +422,7 @@ client.on('message', message => {
   .setFooter(`© MrKayan.`, 'https://f.top4top.net/p_9515rj9d1.png')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3: تم الارسال الاوامر الي خاص")
-  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","IRAQMAXYT")
+  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**IRAQMAXYT**")
   
   
   message.channel.sendEmbed(embed);
