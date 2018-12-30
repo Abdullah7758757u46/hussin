@@ -685,7 +685,7 @@ const codes = {
   
   
   client.on('message' , async message => {
-         if(message.content.startsWith(prefix + "e")) {
+         if(message.content.startsWith(prefix + " ")) {
             let args = message.content.split(" ").slice(1);
     if (args.length < 1) {
       message.channel.send('**قم بكتابه الاسم بعد الامر بالانجليزي من فضلك**');
@@ -867,7 +867,7 @@ client.on('message' , message => {
 if (message.content === '%owner') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
-      .addField("**تم تطوير وبرمجه البوت من قبل :wrench: **","** Oh , 'IRAQMAXYT#7424")
+      .addField("**تم تطوير وبرمجه البوت من قبل** :wrench: **","** Oh , 'IRAQMAXYT#7424")
 .setColor('#B101FC')
   message.author.sendEmbed(embed);
     }
