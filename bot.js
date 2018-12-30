@@ -419,7 +419,7 @@ client.on('message', message => {
     if (message.content === "%help") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`© MrKayan.`, 'https://f.top4top.net/p_9515rj9d1.png')
+  .setFooter(`© IRAQMAXYT`, 'https://cdn.pg.sa/FL6Si2govN.jpg')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3: تم الارسال الاوامر الي خاص")
   .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**IRAQMAXYT#7424**")
