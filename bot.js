@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' %help','GaMerZ Community','Have Fun !',' Iam Here For Games',' %help'];
+    var setGame = [' %help','GaMerZ Community','الأمن المركزي.BOT',' Iam Here For Games',' %help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -557,7 +557,7 @@ client.on('message', message => {
 .addField(' عدد الاعضاء ',` [${client.users.size}] `)
 .addField('الغرف ',`[${client.channels.size}]`) 
 .addField(' البنق ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField(' Devolope By MrKayan ')
+.addField(' Devolope By IRAQMAXYT ')
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -679,7 +679,7 @@ const codes = {
     '*': '*⃣'
   };
   
-  'abcdefghijklmnopqrstuvwxyz'.split('').forEach(c => {
+  'abcdefghijklmnopqrstuvwxyz'.split('ing').forEach(c => {
     codes[c] = codes[c.toUpperCase()] = ` :regional_indicator_${c}:`;
   });
   
@@ -1175,8 +1175,8 @@ client.on("message", message => {
 client.on("message", (message) => {
     if (message.content.startsWith("%ro")) {
                 if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
-            let args = message.content.split(" ").slice(1);
-        message.guild.createChannel(args.join(' '), 'voice');
+            let args = message.content.split(" 1").slice(1);
+        message.guild.createChannel(args.join('1 '), 'voice');
         message.channel.sendMessage('تـم إنـشاء روم صـوتي')
         
     }
@@ -1222,7 +1222,7 @@ client.on('message', message => {
     } else
     
     if (message.content.startsWith(prefix + 'Stream')) {
-      client.user.setGame(argresult, "https://www.twitch.tv/ChampionBot");
+      client.user.setGame(argresult, "https://www.twitch.tv/iraqmaxyt");
         message.channel.sendMessage(`**${argresult}** :The bot stream has been changed`)
     } else
     
