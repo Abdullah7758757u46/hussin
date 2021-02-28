@@ -1273,4 +1273,4 @@ client.on("message", (message) => {
     }
     });
 
-client.login('NTI5MDYwMTYwMjc1MjE4NDMy.XClDqw.I9le3p6VDrCMFFlGpDgT_YEyrrs');
+client.login('NTI5MDYwMTYwMjc1MjE4NDMy.XClDqw.MqmIgc_Eweex7EPdKTl9qsJ5Sfg');
